@@ -1,36 +1,8 @@
 <a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
   <h3><b>Math Magician Web App</b></h3>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -53,8 +25,6 @@ After you're finished please remove all the comments and instructions!
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
-
 # 📖 [Math Magician] <a name="about-project"></a>
 
 > is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
@@ -62,13 +32,9 @@ After you're finished please remove all the comments and instructions!
 > Make simple calculations.
 > Read a random math-related quote.
 
-**[your_project__name]** is a...
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -81,22 +47,10 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> the added feature is calculator component and is for design for our calculator.
-
 - **[Calculator]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://mathmagiccalculator.netlify.app/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- GETTING STARTED -->
 
@@ -106,8 +60,6 @@ After you're finished please remove all the comments and instructions!
 
 > Make simple calculations.
 > Read a random math-related quote.
-
-To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
@@ -188,7 +140,6 @@ You can deploy this project using:
 
 - [ ] **[Calculator]**
 - [ ] **[Random math-related quotes]**
-- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
