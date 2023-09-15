@@ -1,10 +1,10 @@
 import './App.css';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
     <div className="App">
-      <h1>React App</h1>
-      <p>Welcome to my Calculator App</p>
+      <Calculator />
     </div>
   );
 }
