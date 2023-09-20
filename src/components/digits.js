@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 const Digits = ({ handleEvent }) => (
   <div className="calculator-lower">
     <div className="calculator-number">
@@ -24,5 +24,8 @@ const Digits = ({ handleEvent }) => (
     </div>
   </div>
 );
+Digits.propTypes = {
+  handleEvent: PropTypes.func.isRequired,
+};
 
 export default Digits;
