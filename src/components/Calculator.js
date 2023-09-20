@@ -1,48 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Digits from './digits';
-import calculate from '../logic/calculate';
 
-const Calculator = () => {
-  const [data, setData] = useState({
-    calc: {
-      total: null,
-      next: null,
-      operation: null,
-    },
-  });
-  const handleEvent = (e) => {
-    setData(({ calc }) => ({
-      calc: calculate(calc, e.target.value),
-    }));
-  };
-  return (
-    <div className="main-calculator">
-      <div className="calculator-wrap">
-        <div className="calculator-result">
-          {data.calc.total || ''}
-          {data.calc.operation || ''}
-          {data.calc.next || ''}
+const Calculator = () => (
+  <div className="main-calculator">
+    <div className="calculator-wrap">
+      <div className="calculator-result">
+        0
+      </div>
+      <div className="operation-container">
+        <div className="calculator-upper">
+          <div className="calculator-number">
+            <button type="button" alt="">AC</button>
+            <button type="button" alt="">+/-</button>
+            <button type="button" alt="">%</button>
+          </div>
+          <Digits />
         </div>
-        <div className="operation-container">
-          <div className="calculator-upper">
-            <div className="calculator-number">
-              <button type="button" alt="" onClick={handleEvent} value="AC">AC</button>
-              <button type="button" alt="" onClick={handleEvent} value="+/-">+/-</button>
-              <button type="button" alt="" onClick={handleEvent} value="%">%</button>
-            </div>
-            <Digits handleEvent={handleEvent} />
-          </div>
-          <div className="calculator-operation">
-            <button type="button" alt="" onClick={handleEvent} value="÷">÷</button>
-            <button type="button" alt="" onClick={handleEvent} value="x">x</button>
-            <button type="button" alt="" onClick={handleEvent} value="-">-</button>
-            <button type="button" alt="" onClick={handleEvent} value="+">+</button>
-            <button type="button" alt="" onClick={handleEvent} value="=">=</button>
-          </div>
+        <div className="calculator-operation">
+          <button type="button" alt="">÷</button>
+          <button type="button" alt="">x</button>
+          <button type="button" alt="">-</button>
+          <button type="button" alt="">+</button>
+          <button type="button" alt="">=</button>
         </div>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default Calculator;
