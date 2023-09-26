@@ -16,7 +16,7 @@ const Calculator = () => {
     }));
   };
   return (
-    <div className="main-calculator">
+    <div className="main-calculator" style={{ justifyContent: 'space-between' }}>
       <h3>Let&apos;s do some math!</h3>
       <div className="calculator-wrap">
         <div className="calculator-result">
