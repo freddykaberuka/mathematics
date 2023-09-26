@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import Digits from './digits';
+import Digits from '../components/digits';
 import calculate from '../logic/calculate';
-import Quotes from './Quotes';
 
 const Calculator = () => {
   const [data, setData] = useState({
@@ -17,7 +16,8 @@ const Calculator = () => {
     }));
   };
   return (
-    <div className="main-calculator">
+    <div className="main-calculator" style={{ justifyContent: 'space-between' }}>
+      <h3>Let&apos;s do some math!</h3>
       <div className="calculator-wrap">
         <div className="calculator-result">
           {data.calc.total || ''}
@@ -42,7 +42,6 @@ const Calculator = () => {
           </div>
         </div>
       </div>
-      <Quotes />
     </div>
   );
 };
