@@ -45,4 +45,30 @@ describe('calculate', () => {
       operation: null,
     });
   });
+
+  it('should handle numeric buttons', () => {
+    const result = calculate({ next: '5' }, '2');
+    expect(result).toEqual({
+      next: '52',
+      total: null,
+    });
+  });
+
+  it('should handle decimal point', () => {
+    const result = calculate({ next: '5', total: null, operation: null }, '.');
+    expect(result).toEqual({
+      next: '5.',
+      total: null,
+      operation: null,
+    });
+  });
+
+  it('should toggle sign (+/-)', () => {
+    const result = calculate({ next: '7', total: null, operation: null }, '+/-');
+    expect(result).toEqual({
+      next: '-7',
+      total: null,
+      operation: null,
+    });
+  });
 });
