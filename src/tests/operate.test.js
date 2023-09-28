@@ -19,4 +19,9 @@ describe('operate', () => {
     const result = operate(6, 3, '÷');
     expect(result).toBe('2');
   });
+
+  it('should return a modulus of division', () => {
+    const result = operate("4","7",'%');
+    expect(result).toBe('4');
+  })
 });
