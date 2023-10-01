@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Quotes rendering should render quotes correctly 1`] = `
+<div>
+  <div
+    className="quotes"
+  >
+    <h2>
+      Computer Quotes
+    </h2>
+    <div>
+      Loading...
+    </div>
+  </div>
+</div>
+`;
